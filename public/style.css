@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+background: #f4f7fb;
+color: #1f2937;
+}
+
+/* Navigation */
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 7%;
+background: #0f172a;
+color: white;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 12px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.logo img {
+width: 50px;
+height: 50px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.nav-links {
+display: flex;
+gap: 25px;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.nav-links a:hover {
+text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+min-height: 75vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+gap: 35px;
+padding: 70px 7%;
+background: #e8eef7;
+}
+
+.hero-content {
+max-width: 800px;
+}
+
+.hero-content h1 {
+font-size: 48px;
+margin-bottom: 10px;
+}
+
+.hero-content h2 {
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+.hero-content p {
+font-size: 19px;
+margin-bottom: 30px;
+}
+
+.hero-image {
+width: 100%;
+max-width: 900px;
+text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+
+/* Buttons */
+
+.button {
+display: inline-block;
+padding: 12px 25px;
+background: #2563eb;
+color: white;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.button:hover {
+background: #1d4ed8;
+}
+
+/* Sections */
+
+section {
+padding: 70px 7%;
+text-align: center;
+}
+
+section h2 {
+font-size: 32px;
+margin-bottom: 25px;
+}
+
+/* Services */
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #4b5563;
+}
+
+
+
+/* About */
+
+#about {
+    background: #f4f7fb;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: center;
+    text-align: left;
+}
+
+.about-text {
+    min-width: 0;
+}
+
+.about-text h2 {
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+.about-focus {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.about-focus h3 {
+    margin-bottom: 20px;
+}
+
+.about-focus ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-focus li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.about-focus li:last-child {
+    border-bottom: none;
+}
+
+/* Contact */
+
+#contact {
+    background: #e8eef7;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.contact-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-card h3 {
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    margin-bottom: 20px;
+}
+
+.contact-card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    background: #0f172a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-links a:hover {
+    background: #2563eb;
+}
+
+.cv-section {
+    max-width: 700px;
+    margin: 50px auto 0;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cv-section h3 {
+    margin-bottom: 15px;
+}
+
+.cv-section p {
+    margin-bottom: 25px;
+}
+
+/* Footer */
+
+footer {
+    background: #0f172a;
+    color: white;
+    padding: 45px 7% 20px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-brand h3 {
+    margin-bottom: 5px;
+}
+
+.footer-brand p {
+    color: #cbd5e1;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #93c5fd;
+}
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Mobile */
+
+@media (max-width: 900px) {
+
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+}
+
+.services {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.contact-container {
+    grid-template-columns: 1fr;
+}
+
+.nav-links {
+    gap: 12px;
+}
+
+
+}
+
+@media (max-width: 600px) {
+.footer-content {
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+}
+
+.hero-content h2 {
+    font-size: 23px;
+}
+
+.services {
+    grid-template-columns: 1fr;
+}
+
+
+}
